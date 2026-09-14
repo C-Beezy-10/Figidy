@@ -1,158 +1,117 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figidy</title>
 
-```
-<title>Figidy — Break The Habit, Not The Planet</title>
+    <style>
+        html {
+            min-height: 100%;
+        }
 
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+        body {
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(
+                to bottom,
+                #B12581 0%,
+                #7A3A8F 40%,
+                #344EC6 100%
+            );
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            text-align: center;
+        }
 
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-        background: #f3f0e8;
-        color: #17231b;
-    }
+        img {
+            width: 70vw;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
 
-    /* NAVIGATION */
-    header {
-        width: 100%;
-        padding: 28px 6%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+        h1 {
+            font-size: 80px;
+            margin: 20px;
+        }
 
-    .logo {
-        font-size: 32px;
-        font-weight: 800;
-        letter-spacing: -1.5px;
-    }
+        h2 {
+            font-size: 35px;
+        }
 
-    nav a {
-        text-decoration: none;
-        color: #17231b;
-        font-size: 15px;
-        font-weight: 600;
-        margin-left: 30px;
-    }
+        p {
+            font-size: 25px;
+        }
 
-    /* HERO */
-    .hero {
-        min-height: calc(100vh - 90px);
-        padding: 40px 6% 80px;
+        form {
+    margin: 30px auto;
+}
 
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+input {
+    width: 60%;
+    max-width: 400px;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    margin-right: 8px;
+    background-color: #ec9cd0;
+    color: black;
+    
+}
 
-        gap: 40px;
-    }
+button {
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #ec9cd0;
+}
+    </style>
+</head>
 
-    .hero-text {
-        width: 45%;
-        max-width: 600px;
-        z-index: 2;
-    }
+<body>
+    <h1>Figidy</h1>
 
-    .eyebrow {
-        font-size: 14px;
-        font-weight: 700;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        color: #66816a;
-        margin-bottom: 22px;
-    }
+    <img src="product.jpeg" alt="photo of product">
 
-    .hero-text h1 {
-        font-size: clamp(55px, 7vw, 100px);
-        line-height: 0.92;
-        letter-spacing: -5px;
-        margin-bottom: 30px;
-    }
+    <h2>Break The Habit, Not The Planet</h2>
 
-    .hero-text h1 span {
-        color: #65856a;
-    }
+    <p>
+        A nicotine-free, vapor-free alternative designed to replace
+        the physical hand-to-mouth habit of vaping.
+    </p>
 
-    .hero-text p {
-        max-width: 500px;
-        font-size: 20px;
-        line-height: 1.6;
-        color: #59635c;
-        margin-bottom: 35px;
-    }
+    <h2>value prop title</h2>
+    <p>value prop details</p>
 
-    .cta {
-        display: inline-block;
-        padding: 17px 32px;
-        border-radius: 100px;
+    <h2>supporting copy title</h2>
+    <p>supporting copy details</p>
 
-        background: #17231b;
-        color: #ffffff;
+    <h2>Join the Figidy Waitlist</h2>
 
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: 700;
+</p>
 
-        transition: transform 0.2s ease, background 0.2s ease;
-    }
+<form action="https://formspree.io/f/mqpkvgqb" method="POST">
 
-    .cta:hover {
-        transform: translateY(-3px);
-        background: #314639;
-    }
+    <input
+        type="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+    >
 
-    /* PRODUCT IMAGE */
-    .product-container {
-        width: 55%;
-        min-height: 650px;
+    <button type="submit">
+        JOIN THE WAITLIST →
+    </button>
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
+</form>
 
-        position: relative;
-    }
+<p>contact links</p>
 
-    .product-container::before {
-        content: "";
-        position: absolute;
-
-        width: 520px;
-        height: 520px;
-
-        border-radius: 50%;
-
-        background: #dfe4d8;
-
-        z-index: 0;
-    }
-
-    .product-container img {
-        position: relative;
-        z-index: 1;
-
-        width: min(650px, 100%);
-        max-height: 720px;
-
-        object-fit: contain;
-
-        display: block;
-
-        filter: drop-shadow(0 25px 30px rgba(0, 0, 0, 0.12));
-
-        transition: transform 0.4s ease;
-    }
-
-    .product-container img:hover {
-        transform: scale(1.03);
-    }
-```
+</body>
+</html>
